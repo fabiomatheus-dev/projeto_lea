@@ -1,0 +1,83 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: white ; /* Verde claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #cce0c3; /* Rosa */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 85%;
+            text-align: center;
+            color: #2a2a2a;
+        }
+
+        .logos {
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .actions button,
+        .actions a {
+            padding: 12px 10px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .actions .start {
+            background-color: #f2a9c1; /* Verde */
+            color: #2a2a2a;
+        }
+
+        .actions .start:hover {
+            background-color: #b5d3a7;
+        }
+
+        .actions .login {
+            background-color: #f2a9c1; /* Verde */
+            color: #2a2a2a;    /* faz o <a> se comportar como um bloco */
+            display: block;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .actions .login:hover {
+            background-color: #f2a9c1;
+            color: white;
+        }
+
+        .actions .privacy {
+            background-color: #f2a9c1;
+            color: #2a2a2a;
+        }
+
+        .actions .privacy:hover {
+            background-color: #b5d3a7;
+        }
