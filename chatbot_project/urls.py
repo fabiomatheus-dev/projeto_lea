@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('lea_app.urls')),
     path('accounts/', include('accounts.urls')),
+    path('privacidade/', include('privacidade.urls'))
 ]

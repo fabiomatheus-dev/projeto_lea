@@ -11,3 +11,6 @@ def register(request):
 
 def password_reset(request):
     return render(request, 'password_reset.html')
+
+def privacidade(request):
+    return render(request, 'privacidade.html')

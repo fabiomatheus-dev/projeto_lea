@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'lea_app',
+    'privacidade',
 ]
 
 MIDDLEWARE = [

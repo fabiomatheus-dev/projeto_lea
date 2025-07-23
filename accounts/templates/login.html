@@ -30,7 +30,6 @@
 <path d="M404 306.253C404 336.879 392.136 316.132 377.5 316.132C362.864 316.132 351 333.915 351 306.253C351 295.068 362.864 286 377.5 286C392.136 286 404 295.068 404 306.253Z" fill="#F9F9F9"/>
 <path d="M308.414 334.586C307.471 335.529 306.529 336.471 305.586 337.414C305.745 338.328 305.94 339.214 306.171 340.071C308.095 347.772 315.712 354.973 325.536 354.889C335.292 354.888 342.858 347.968 344.94 340.066C345.185 339.176 345.371 338.28 345.524 337.295C344.508 336.432 343.492 335.568 342.476 334.705C341.748 334.727 340.888 334.874 340.127 334.928C332.992 335.602 328.494 334.895 325.5 334.889C322.528 334.915 318.224 335.629 310.9 334.856C310.111 334.789 309.283 334.7 308.414 334.586Z" fill="#F9F9F9"/>
 </svg>
-<div class="container">
     <h1>Login</h1>
     <p class="intro">Faça login para continuar com a LEA</p>
     <div class="actions">
@@ -44,13 +43,13 @@
             <a href="{% url 'password_reset' %}" class="login">🔒 Esqueci minha senha?</a>
             <a href="{% url 'register' %}" class="login">➕ Criar conta</a>
         </div>
+    </div><br>
+    {% load static %}
+    <div class="logos">
+        <img src="{% static 'images/logo1.png' %}" width="50px">
+        <img src="{% static 'images/logo2.png' %}" width="25px">
+        <img src="{% static 'images/logo3.png' %}" width="50px">
     </div>
-</div><br>
-{% load static %}
-<div class="logos">
-    <img src="{% static 'images/logo1.png' %}" width="50px">
-    <img src="{% static 'images/logo2.png' %}" width="25px">
-    <img src="{% static 'images/logo3.png' %}" width="50px">
 </div>
 </div>
 {% endblock %}

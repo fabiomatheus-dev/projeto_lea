@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7ec384, #fed6e3);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #f5f8f2; 
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    color: #2a2a2a;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+.logos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #2a2a2a;
+}
+
+.intro {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.actions button,
+.actions a {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions .start {
+    background-color: #f9cadc;
+    color:#000;
+}
+
+.actions .start:hover {
+    background-color: #c8e9c8;
+}
+
+.actions .option {
+    background-color: #7ec384;
+    color: #fff;
+}
+
+.actions .option:hover {
+    background-color: #65aa6b;
+}
+
+.actions .login {
+    background-color: #f9cadc;
+    color: #2a2a2a;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.actions .login:hover {
+    background-color: #c8e9c8;
+    color: #000;
+}
+
+.actions .privacy {
+    background-color: #f9cadc;
+    color: #2a2a2a;
+}
+
+.actions .privacy:hover {
+    background-color: #c8e9c8;
+}
+
+    /* body {
+      background-color: #F9F9F9; 
+      color: #4F4F4F;
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      min-height: 100vh;
+    } */
+    
+     
+    /* .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    } */
+    
+
+    /* header {
+      display: flex;
+      align-items: center;
+      padding: 25px 30px;
+      background-color: #BFD8C1; 
+      color: #3A3A3A; 
+      position: relative;
+    }
+    
+    .back-button {
+      background: none;
+      border: none;
+      color: #3A3A3A;
+      cursor: pointer;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    /* header h1 {
+      font-family: 'Lora', serif;
+      font-size: 24px;
+      font-weight: 700;
+      flex-grow: 1;
+    } */
+    
+    /* SEÇÃO DE CONTEÚDO */
+    .content-section {
+      padding: 30px;
+    }
+    
+    .section-title {
+      font-family: 'Lora', serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #3A3A3A; /* Marrom */
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #E3A1B6; /* Rosa Antigo */
+      border-radius: 3px;
+    }
+    
+    /* CARTÕES DE CONFIGURAÇÃO */
+    .settings-card {
+      background: #F9F9F9; /* Off-white */
+      border-radius: 12px;
+      padding: 0;
+      margin-bottom: 30px;
+      overflow: hidden;
+      border: 1px solid #E4E4E4; /* Cinza claro */
+    }
+    
+    .setting-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #E4E4E4; /* Cinza claro */
+      transition: background-color 0.2s;
+    }
+    
+    .setting-item:last-child {
+      border-bottom: none;
+    }
+    
+    .setting-item:hover {
+      background-color: #FFE7F3; /* Rosa Claro */
+    }
+    
+    .setting-text {
+      flex: 1;
+      margin-right: 15px;
+    }
+    
+    .setting-title {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #3A3A3A; /* Marrom */
+    }
+    
+    .setting-description {
+      display: block;
+      font-size: 15px;
+      color: #4F4F4F; /* Cinza Escuro */
+      margin-top: 8px;
+    }
+    
+    /* SWITCH PERSONALIZADO COM SUA PALETA */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 52px;
+      height: 28px;
+    }
+    
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #E4E4E4; /* Cinza claro */
+      transition: .4s;
+      border-radius: 34px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    input:checked + .slider {
+      background-color: #E3A1B6; /* Rosa Antigo */
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+    
+    /* BOTÕES COM SUA PALETA */
+    .btn {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .btn-primary {
+      background-color: #E3A1B6; 
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: #d18da3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(227, 161, 182, 0.3);
+    }
+    
+    .btn-secondary {
+      background-color: #BFD8C1; 
+      color: #3A3A3A; 
+    }
+    
+    .btn-secondary:hover {
+      background-color: #a8c2ab;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(191, 216, 193, 0.3);
+    }
+    
+    /* .btn-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+      justify-content: center;
+    } */
+    
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+      
+      .container {
+        border-radius: 12px;
+      }
+      
+      .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .switch {
+        margin-top: 15px;
+        align-self: flex-end;
+      }
+      
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+    
+    /* DECORAÇÃO COM SUA PALETA */
+    .color-palette {
+      display: flex;
+      justify-content: center;
+      margin: 25px 0;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
+    /* .color-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 10px;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    } */
+    
+    .palette-title {
+      text-align: center;
+      font-family: 'Lora', serif;
+      color: #3A3A3A; /* Marrom */
+      margin-bottom: 15px;
+    }
+    
+    /* ANIMAÇÕES */
+    /* @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    } */
+    
+    .content-section {
+      animation: fadeIn 0.8s ease-out;
+    }
