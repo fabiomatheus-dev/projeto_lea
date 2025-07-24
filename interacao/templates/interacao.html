@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>LEA</title>
+    <link rel="stylesheet" href="{% static 'lea_app/css/style4.css' %}">
+</head>
+<body>
+
+    <!-- Menu lateral com ícones -->
+    <div class="sidebar" style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; gap: 15px;">
+        <img src="{% static 'img/robot_icon.png' %}" alt="Robô" width="40">
+        <img src="{% static 'img/book_icon.png' %}" alt="Livro" width="40">
+        <img src="{% static 'img/settings_icon.png' %}" alt="Configurações" width="40">
+        <img src="{% static 'img/lock_icon.png' %}" alt="Trancar" width="40">
+        <img src="{% static 'img/logo1.png' %}" alt="Logo1" width="40">
+        <img src="{% static 'img/logo2.jpg' %}" alt="Logo2" width="40">
+    </div>
+
+    <!-- Conteúdo principal com a classe container -->
+    <div class="container">
+        <h1>Oi, sou a LEA!</h1>
+
+        <div class="avatar-container" style="margin: 20px 0;">
+            <img src="{% static 'img/lea_avatar.png' %}" alt="LEA" style="max-width: 150px;">
+        </div>
+
+        <p class="intro">Como posso te ajudar?</p>
+
+        <div class="message-box" style="display: flex; gap: 10px; justify-content: center;">
+            <input type="text" placeholder="Digite sua mensagem..." style="flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #ccc;">
+            <button style="background: none; border: none; cursor: pointer;">
+                <img src="{% static 'img/send_icon.png' %}" alt="Enviar" style="width: 32px;">
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>

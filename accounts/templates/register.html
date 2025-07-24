@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
+
 {% block title %}Cadastro{% endblock %}
+
 {% block content %}
-<h2>Criar Conta</h2>
-<form method="post">
-    {% csrf_token %}
-    <input type="text" name="username" placeholder="Usuário">
-    <input type="email" name="email" placeholder="Email">
-    <input type="password" name="password1" placeholder="Senha">
-    <input type="password" name="password2" placeholder="Confirmar Senha">
-    <button type="submit">Cadastrar</button>
-</form>
-<p>Já tem conta? <a href="{% url 'login' %}">Entrar</a></p>
+
+{% load static %}
+<div class="container">
+    <h1>Criar Conta</h1>
+    <div class="avatar-container" style="margin: 20px 0;">
+        <img src="{% static 'img/lea_avatar.png' %}" alt="LEA" style="max-width: 200px;">
+    </div>
+    <form method="post" class="actions">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Usuário" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password1" placeholder="Senha" required>
+        <input type="password" name="password2" placeholder="Confirmar Senha" required>
+        <button type="submit" class="start">Cadastrar</button>
+    </form>
+    <p class="intro">Já tem conta? <a href="{% url 'login' %}" class="login">Entrar</a></p>
+</div>
 {% endblock %}

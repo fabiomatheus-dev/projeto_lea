@@ -14,3 +14,9 @@ def password_reset(request):
 
 def privacidade(request):
     return render(request, 'privacidade.html')
+
+def tela_configuracoes(request):
+    return render(request, 'tela_configuracoes.html')
+
+def interacao(request):
+    return render(request, 'interacao.html')

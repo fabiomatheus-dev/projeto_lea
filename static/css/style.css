@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+/* Menu lateral */
+.sidebar {
+    width: 80px;
+    background-color: #ffe7f3;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.sidebar img {
+    width: 25px;
+    height: 25px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* Área principal */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bfd8c1;
+    position: relative;
+}
+
+/* Texto de saudação */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Centraliza verticalmente na tela inteira */
+}
+
+.greeting,
+.greetingg {
+    font-size: 40px;
+    color: #3a3a3a;
+    margin: 5px 0; /* Espaço entre texto e imagem */
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+/* Campo de mensagem */
+.message-box {
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background-color: #e3a1b6;
+    border-top: 1px solid #e3a1b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-box input {
+    width: 90%;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.message-box button {
+    background: none;
+    border: none;
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.message-box button img {
+    width: 40px;
+    height: 40px;
+}
