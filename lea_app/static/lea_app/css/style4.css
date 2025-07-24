@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 2em;
     color: #2a2a2a;
 }
@@ -137,4 +137,55 @@ input::placeholder {
     font-style: italic;
 }
 
+.main-content {
+    flex: 1;
+    margin-left: 220px; /* Cria um espaço à esquerda para a barra lateral */
+    padding: 40px;
+    background-color: #ffffff;
+    min-height: 100vh; /* Garantir que o conteúdo principal ocupe a altura total */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do main */
+    align-items: center; /* Centraliza o conteúdo dentro do main */
+}
 
+.layout {
+    display: flex;
+    height: 100vh; /* Garantir que o layout ocupe a altura total da tela */
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #f0f4ed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Deixa a barra lateral fixa à esquerda */
+    height: 100%; /* Garantir que a barra lateral ocupe toda a altura da tela */
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #7ec384;
+}

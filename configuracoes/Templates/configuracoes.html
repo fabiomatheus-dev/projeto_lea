@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>⚙️ Configurações</title>
+    <link rel="icon" type="image/svg+xml" href="{% static 'img/lea_logo.svg' %}">
+    <link rel="stylesheet" href="{% static 'lea_app/css/style4.css' %}">
+    <style>
+        /* Insira aqui todo o CSS que você colou anteriormente */
+    </style>
+</head>
+<body>
+    <!-- <div class="layout"> -->
+        <!-- <div class="main-content"> -->
+            <div class="container">
+                <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h1>Configurações</h1>
+                    <button class="close" onclick="window.location.href='/'" style="font-size: 24px; background: none; border: none; cursor: pointer;">&times;</button>
+                </div>
+
+                <div class="section" id="geral" style="text-align: left;">
+                    <h3><i class="fas fa-cog"></i> Geral</h3>
+                    <label for="idioma">Idioma</label>
+                    <select id="idioma" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 10px;">
+                        <option>Português</option>
+                        <option>Inglês</option>
+                        <option>Espanhol</option>
+                    </select>
+
+                    <label for="fonte">Tamanho da Fonte</label>
+                    <select id="fonte" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 10px;">
+                        <option>Pequeno</option>
+                        <option>Médio</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+
+                <div class="actions" id="conta" style="text-align: left;">
+                    <h3><i class="fas fa-user"></i> Conta</h3>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" value="Nome usuário">
+
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" value="usuarionome">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="usuario@gmail.com">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout">
+    <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{% url 'index' %}">🏠 Início</a></li>
+                <li><a href="{% url 'configuracoes' %}">⚙️ Configuracoes</a></li>
+                <li><a href="{% url 'privacidade' %}">📝 Privacidade e Acessibilidade</a></li>
+            </ul>
+     </nav>
+</body>
+</html>

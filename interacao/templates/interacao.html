@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="{% static 'lea_app/css/style4.css' %}">
 </head>
 <body>
-
-    <!-- Menu lateral com ícones -->
-    <div class="sidebar" style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; gap: 15px;">
-        <img src="{% static 'img/robot_icon.png' %}" alt="Robô" width="40">
-        <img src="{% static 'img/book_icon.png' %}" alt="Livro" width="40">
-        <img src="{% static 'img/settings_icon.png' %}" alt="Configurações" width="40">
-        <img src="{% static 'img/lock_icon.png' %}" alt="Trancar" width="40">
-        <img src="{% static 'img/logo1.png' %}" alt="Logo1" width="40">
-        <img src="{% static 'img/logo2.jpg' %}" alt="Logo2" width="40">
-    </div>
-
     <!-- Conteúdo principal com a classe container -->
     <div class="container">
         <h1>Oi, sou a LEA!</h1>
@@ -35,6 +24,14 @@
             </button>
         </div>
     </div>
-
+    <div class="layout">
+    <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{% url 'index' %}">🏠 Início</a></li>
+                <li><a href="{% url 'configuracoes' %}">⚙️ Configuracoes</a></li>
+                <li><a href="{% url 'privacidade' %}">📝 Privacidade e Acessibilidade</a></li>
+            </ul>
+     </nav>
 </body>
 </html>

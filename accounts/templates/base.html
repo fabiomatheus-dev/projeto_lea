@@ -13,5 +13,18 @@
         {% block content %}
         {% endblock %}
     </main>
+    <div class="layout">
+    <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{% url 'index' %}">🏠 Início</a></li>
+                <li><a href="{% url 'configuracoes' %}">⚙️ Configuracoes</a></li>
+                <li><a href="{% url 'privacidade' %}">📝 Privacidade e Acessibilidade</a></li>
+            </ul>
+     </nav>
+</div>
+    
 </body>
 </html>
+
+

@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 def tela_configuracoes(request):
-    return render(request, 'tela_configuracoes.html')
+    return render(request, 'configuracoes.html')
 

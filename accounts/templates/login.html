@@ -8,9 +8,9 @@
 {% load static %}
 <div class="container">
         <h1>Login</h1>
-        <div class="avatar-container" style="margin: 20px 0;">
-            <img src="{% static 'img/lea_avatar.png' %}" alt="LEA" style="max-width: 200px;">
-        </div>
+        <div class="avatar-container">
+            <img src="{% static 'img/lea_avatar.png' %}" alt="LEA" style="max-width: 150px;">
+        </div><br>
     <div class="actions">
         <form method="post">
             {% csrf_token %}
@@ -23,12 +23,5 @@
             <a href="{% url 'register' %}" class="login">➕ Criar conta</a>
         </div>
     </div><br>
-    {% load static %}
-    <div class="logos">
-        <img src="{% static 'images/logo1.png' %}" width="50px">
-        <img src="{% static 'images/logo2.png' %}" width="25px">
-        <img src="{% static 'images/logo3.png' %}" width="50px">
-    </div>
-</div>
 </div>
 {% endblock %}
