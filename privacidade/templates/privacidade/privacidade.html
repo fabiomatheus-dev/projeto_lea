@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacidade e Acessibilidade</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'lea_app/css/style_privacidade.css' %}">
+  <link rel="stylesheet" href="{% static 'lea_app/css/style_teste.css' %}">
 </head>
 <body>
   <div class="container">
     <h1>Privacidade e Acessibilidade</h1>
-    <div class="content-section">
+    <!-- <div class="content-section"> -->
         <div class="avatar-container">
             <img src="{% static 'img/lea_avatar.png' %}" alt="LEA" style="max-width: 150px;">
         </div><br>
@@ -19,7 +19,7 @@
       <div class="settings-card">
         <div class="setting-item">
           <div class="setting-text">
-            <span class="setting-title">Compartilhar dados com terceiros</span>
+            <!-- <span class="setting-title">Compartilhar dados com terceiros</span> -->
             <span class="setting-description">Permite que parceiros usem seus dados para melhorar a experiência</span>
           </div>
           <label class="switch">
@@ -30,7 +30,7 @@
         
         <div class="setting-item">
           <div class="setting-text">
-            <span class="setting-title">Coleta de dados de uso</span>
+            <!-- <span class="setting-title">Coleta de dados de uso</span> -->
             <span class="setting-description">Compartilha dados anônimos para melhorias no aplicativo</span>
           </div>
           <label class="switch">
@@ -46,7 +46,7 @@
       <!-- <div class="settings-card"> -->
         <div class="setting-item">
           <div class="setting-text">
-            <span class="setting-title">Modo de alto contraste</span>
+            <!-- <span class="setting-title">Modo de alto contraste</span> -->
             <span class="setting-description">Aumenta o contraste para melhor visibilidade</span>
           </div>
           <label class="switch">
@@ -57,7 +57,7 @@
         
         <div class="setting-item">
           <div class="setting-text">
-            <span class="setting-title">Tamanho do texto aumentado</span>
+            <!-- <span class="setting-title">Tamanho do texto aumentado</span> -->
             <span class="setting-description">Aumenta o tamanho de todos os textos no aplicativo</span>
           </div>
           <label class="switch">
@@ -68,7 +68,7 @@
         
         <div class="setting-item">
           <div class="setting-text">
-            <span class="setting-title">Leitor de tela</span>
+            <!-- <span class="setting-title">Leitor de tela</span> -->
             <span class="setting-description">Ativa compatibilidade com tecnologias assistivas</span>
           </div>
           <label class="switch">
@@ -78,10 +78,27 @@
         </div>
       <!-- </div> -->
     </div>
-      <div class="actions">
+      <div class="actions"><br><br>
         <button class="login">Salvar Configurações</button>
         <button class="login">Restaurar Padrões</button>
       </div>
   </div>
+      <div class="layout">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{% url 'index' %}">🏠 Início</a></li>
+                <li><a href="{% url 'configuracoes' %}">⚙️ Configuracoes</a></li>
+                <li><a href="{% url 'privacidade' %}">📝 Privacidade e Acessibilidade</a></li>
+            </ul>
+                        <br>
+        {% load static %}
+        <div class="logos"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <img src="{% static 'img/logo_nova.png' %}" width="65px">
+            <img src="{% static 'img/logo_ufpe.png' %}" width="90px">
+            <img src="{% static 'img/logo_facepe.png' %}" width="80px">
+        </div>
+     </nav>
+</div>
 </body>
 </html>
